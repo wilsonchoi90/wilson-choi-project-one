@@ -358,7 +358,7 @@ img {
   font-size: 25px;
 }
 
-.header-main {
+.header-main-button {
   width: 35%;
   margin: 40px 0px;
   padding: 20px 0px;
@@ -373,4 +373,30 @@ img {
 .header-image-container {
   width: 50%;
   height: auto;
+}
+
+.pay-info {
+  background: #fff;
+  padding: 50px;
+}
+.pay-info .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pay-info-container-1,
+.pay-info-container-2,
+.pay-info-container-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
