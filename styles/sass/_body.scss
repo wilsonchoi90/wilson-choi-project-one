@@ -12,7 +12,7 @@ $faintblue: #f6f7fb;
     .wrapper {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content:space-between;
     }
 }
 
@@ -20,5 +20,17 @@ $faintblue: #f6f7fb;
 .pay-info-container-2,
 .pay-info-container-3 {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    border: 1px dashed $green;
+    padding: 5px 40px;
+
+    .pay-info-image-container-1,
+    .pay-info-text-container-1,
+    .pay-info-image-container-2,
+    .pay-info-text-container-2, 
+    .pay-info-image-container-3,
+    .pay-info-text-container-3 {
+        padding: 10px;
+    }
 }

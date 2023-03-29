@@ -396,7 +396,31 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border: 1px dashed #abd373;
+  padding: 5px 40px;
+}
+.pay-info-container-1 .pay-info-image-container-1,
+.pay-info-container-1 .pay-info-text-container-1,
+.pay-info-container-1 .pay-info-image-container-2,
+.pay-info-container-1 .pay-info-text-container-2,
+.pay-info-container-1 .pay-info-image-container-3,
+.pay-info-container-1 .pay-info-text-container-3,
+.pay-info-container-2 .pay-info-image-container-1,
+.pay-info-container-2 .pay-info-text-container-1,
+.pay-info-container-2 .pay-info-image-container-2,
+.pay-info-container-2 .pay-info-text-container-2,
+.pay-info-container-2 .pay-info-image-container-3,
+.pay-info-container-2 .pay-info-text-container-3,
+.pay-info-container-3 .pay-info-image-container-1,
+.pay-info-container-3 .pay-info-text-container-1,
+.pay-info-container-3 .pay-info-image-container-2,
+.pay-info-container-3 .pay-info-text-container-2,
+.pay-info-container-3 .pay-info-image-container-3,
+.pay-info-container-3 .pay-info-text-container-3 {
+  padding: 10px;
 }
