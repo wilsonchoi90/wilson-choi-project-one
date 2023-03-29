@@ -5,6 +5,10 @@ $lightgrey: #88cce2;
 $white: #fff;
 $faintblue: #f6f7fb;
 
+.products {
+    background: $white;
+}
+
 .products-head-text {
     display: flex;
     flex-wrap: wrap;
@@ -49,6 +53,7 @@ $faintblue: #f6f7fb;
         padding: 10px 25px;
         border-radius: 3px;
         border: 1px solid lightgrey;
+        font-size: 22px;
     }
 
     button:active,
@@ -86,3 +91,4 @@ $faintblue: #f6f7fb;
         }
     }
 }
+

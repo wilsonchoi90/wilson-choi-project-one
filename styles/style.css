@@ -218,7 +218,7 @@ template {
 
 html {
   font-family: "Rubik", sans-serif;
-  font-size: 100%;
+  font-size: 125%;
   color: #000;
 }
 
@@ -401,8 +401,13 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: 1px dashed #abd373;
-  padding: 5px 40px;
+  padding: 5px 5px;
+  width: calc(33% - 25px);
+  line-height: 0.75;
 }
 .pay-info-container-1 .pay-info-image-container-1,
 .pay-info-container-1 .pay-info-text-container-1,
@@ -423,4 +428,118 @@ img {
 .pay-info-container-3 .pay-info-image-container-3,
 .pay-info-container-3 .pay-info-text-container-3 {
   padding: 10px;
+}
+
+.plant-list {
+  background: #fff;
+  padding: 50px 0px;
+  line-height: 0.5;
+}
+.plant-list h4 {
+  font-weight: 400;
+}
+.plant-list p {
+  color: #abd373;
+}
+
+.products {
+  background: #fff;
+}
+
+.products-head-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.products-head-text h2 {
+  text-transform: uppercase;
+  font-size: 40px;
+  position: relative;
+}
+
+.products-head-text h2:before {
+  content: "";
+  width: 100px;
+  height: 3px;
+  background: #abd373;
+  left: -120px;
+  top: 50%;
+  position: absolute;
+}
+
+.products-head-text h2:after {
+  content: "";
+  width: 100px;
+  height: 3px;
+  background: #abd373;
+  right: -120px;
+  top: 50%;
+  position: absolute;
+}
+
+.product-buttons-section {
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.product-buttons-section button {
+  background: #fff;
+  margin: 10px;
+  padding: 10px 25px;
+  border-radius: 3px;
+  border: 1px solid lightgrey;
+  font-size: 22px;
+}
+.product-buttons-section button:active,
+.product-buttons-section button:focus {
+  color: #abd373;
+  border: 1px dashed #abd373;
+}
+
+.plant-list {
+  background-color: #fff;
+}
+.plant-list .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.relative-parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.relative-parent .absolute-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  -webkit-box-shadow: 5px 5px 5px lightgrey;
+          box-shadow: 5px 5px 5px lightgrey;
+}
+.relative-parent .absolute-child img {
+  padding: 8px;
+  width: 25px;
+  height: auto;
 }

@@ -22,8 +22,11 @@ $faintblue: #f6f7fb;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     border: 1px dashed $green;
-    padding: 5px 40px;
+    padding: 5px 5px;
+    width: calc(33% - 25px);
+    line-height: 0.75;
 
     .pay-info-image-container-1,
     .pay-info-text-container-1,
@@ -32,5 +35,19 @@ $faintblue: #f6f7fb;
     .pay-info-image-container-3,
     .pay-info-text-container-3 {
         padding: 10px;
+    }
+}    
+
+.plant-list {
+    background: $white;
+    padding: 50px 0px;
+    line-height: 0.5;
+
+    h4 {
+        font-weight: 400;
+    }
+
+    p {
+        color: $green;
     }
 }
