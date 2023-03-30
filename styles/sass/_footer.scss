@@ -1,0 +1,21 @@
+$green: #abd373;
+$darkeygrey: #4c4c4c;
+$black: #000;
+$lightgrey: #88cce2;
+$white: #fff;
+$faintblue: #f6f7fb;
+
+footer {
+    background-image: url(../assets/footer.jpg);
+    background-repeat: no-repeat;
+    background-position: contain;
+    padding: 50px 0px;
+}
+
+.footer-parent {
+    display: flex;
+}
+
+.footer-column img {
+    width: 20px;
+}
