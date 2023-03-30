@@ -255,6 +255,7 @@ img {
   color: #fff;
   text-transform: uppercase;
   font-weight: 300;
+  font-size: 0.8rem;
 }
 
 .currency-language {
@@ -278,6 +279,7 @@ img {
   color: #fff;
   text-transform: uppercase;
   font-weight: 400;
+  font-size: 0.8rem;
 }
 
 .header-middle {
@@ -311,8 +313,9 @@ img {
 .header-nav li a {
   padding: 0px 15px;
   text-transform: uppercase;
-  font-weight: 400;
   text-decoration: none;
+  font-weight: 400;
+  font-size: 0.8rem;
 }
 
 .header-bottom {
@@ -406,7 +409,7 @@ img {
           justify-content: center;
   border: 1px dashed #abd373;
   padding: 5px 5px;
-  width: calc(33% - 25px);
+  width: calc(33.3333333333% - 25px);
   line-height: 0.75;
 }
 .pay-info-container-1 .pay-info-image-container-1,
@@ -440,6 +443,7 @@ img {
 }
 .plant-list p {
   color: #abd373;
+  font-weight: 300;
 }
 
 .products {
@@ -542,4 +546,60 @@ img {
   padding: 8px;
   width: 25px;
   height: auto;
+}
+
+.collection {
+  background: #fff;
+  padding: 50px 0px;
+}
+.collection .collection-parent-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+}
+.collection .collection-child-1 {
+  background-image: url(../assets/b1.jpeg);
+  background-repeat: no-repeat;
+  background-position: cover;
+  width: calc(67% - 10px);
+  height: 300px;
+}
+.collection .collection-child-2 {
+  background-image: url(../assets/b2.jpeg);
+  background-repeat: no-repeat;
+  background-position: cover;
+  width: calc(33% - 10px);
+  height: 300px;
+}
+
+.collection-parent-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+}
+.collection-parent-2 .collection-child-3 {
+  background-image: url(../assets/b3.jpeg);
+  background-repeat: no-repeat;
+  background-position: cover;
+  width: calc(33% - 10px);
+  height: 300px;
+}
+.collection-parent-2 .collection-child-4 {
+  background-image: url(../assets/b4.jpeg);
+  background-repeat: no-repeat;
+  background-position: cover;
+  width: calc(67% - 10px);
+  height: 300px;
 }

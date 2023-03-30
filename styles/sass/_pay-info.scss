@@ -25,7 +25,7 @@ $faintblue: #f6f7fb;
     justify-content: center;
     border: 1px dashed $green;
     padding: 5px 5px;
-    width: calc(33% - 25px);
+    width: calc(100%/3 - 25px);
     line-height: 0.75;
 
     .pay-info-image-container-1,
@@ -49,5 +49,6 @@ $faintblue: #f6f7fb;
 
     p {
         color: $green;
+        font-weight: 300;
     }
 }
