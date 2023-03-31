@@ -16,7 +16,7 @@ $faintblue: #f6f7fb;
 
     h2 {
         text-transform: uppercase;
-        font-size: 40px;
+        font-size: 2rem;
         position: relative;
     }
 }
@@ -83,6 +83,8 @@ $faintblue: #f6f7fb;
         left: 0;
         bottom: 0;
         box-shadow: 5px 5px 5px lightgrey;
+
+        // had to use light grey above as the "lightgrey" on design sheet shows up light blue and the "faintblue" shows up lightgrey but was way too light and didn't show on website
 
         img {
             padding: 8px;
