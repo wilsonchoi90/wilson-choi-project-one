@@ -5,6 +5,7 @@ $lightgrey: #88cce2;
 $white: #fff;
 $faintblue: #f6f7fb;
 
+
 .collection {
     background: $white;
     padding: 50px 0px;
@@ -19,7 +20,7 @@ $faintblue: #f6f7fb;
 
 .collection-child {
     background-repeat: no-repeat;
-    background-position: cover;
+    background-position: stretch;
     display: flex;
     flex-direction: column;
     height: 300px;
@@ -50,28 +51,32 @@ $faintblue: #f6f7fb;
 
 .collection-child-1 {
     background-image: url(../assets/b1.jpeg);
-    width: calc(67% - 10px);
+    width: calc(67%);
     align-items: left;
     justify-content: flex-start;
 }
     
 .collection-child-2 {
     background-image: url(../assets/b2.jpeg);
-    width: calc(33% - 10px);
+    width: calc(33%);
     align-items: center;
     justify-content: center;
 }
     
 .collection-child-3 {
     background-image: url(../assets/b3.jpeg);
-    width: calc(33% - 10px);
+    width: calc(33%);
     align-items: center;
     justify-content: center;
 }
     
 .collection-child-4 {
     background-image: url(../assets/b4.jpeg);
-    width: calc(67% - 10px);
+    width: calc(67%);
     align-items: left;
     justify-content: flex-start;
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
 }
