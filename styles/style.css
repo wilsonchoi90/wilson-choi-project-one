@@ -258,7 +258,7 @@ img {
   font-size: 0.8rem;
 }
 
-.currency-language {
+.currency-language-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -273,7 +273,7 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.currency-language li {
+.currency-language-container li {
   padding-left: 20px;
   display: inline-block;
   color: #fff;
@@ -282,11 +282,11 @@ img {
   font-size: 0.8rem;
 }
 
-.header-middle {
+.header-main {
   background: #fff;
   padding: 20px 0px;
 }
-.header-middle .wrapper {
+.header-main .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -302,33 +302,34 @@ img {
           align-items: center;
 }
 
-.shopping-bag img {
+.shopping-bag-container img {
   width: 20px;
   height: auto;
 }
 
-.header-nav li {
+.header-nav-container li {
   display: inline-block;
 }
-.header-nav li a {
+.header-nav-container li a {
   padding: 0px 15px;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 400;
   font-size: 0.8rem;
+  color: #000;
 }
 
-.header-bottom {
+.hero-image {
   background: #f8eee5;
   padding: 35px 0px;
 }
-.header-bottom .wrapper {
+.hero-image .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.header-text-container {
+.hero-text-container {
   width: 50%;
   height: auto;
   display: -webkit-box;
@@ -345,32 +346,35 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.header-text-container h1 {
+.hero-text-container h1 {
   margin: 0px;
   font-size: 50px;
   font-weight: 300;
   text-transform: uppercase;
 }
-.header-text-container #header-text-emphasis {
+.hero-text-container #hero-text-emphasis {
   display: block;
   font-size: 105px;
   font-weight: 400;
 }
-.header-text-container p {
+.hero-text-container p {
   margin: 0px;
   font-size: 25px;
 }
 
-.header-main-button {
+.hero-button {
   width: 35%;
   margin: 40px 0px;
   padding: 20px 0px;
   border: none;
   border-radius: 100px;
   background: #abd373;
+}
+.hero-button a {
   color: #fff;
   font-weight: 400;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .header-image-container {
@@ -566,7 +570,7 @@ img {
 
 .collection-child {
   background-repeat: no-repeat;
-  background-position: stretch;
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -586,7 +590,7 @@ img {
   font-size: 1.5rem;
   margin: 0 auto;
 }
-.collection-child button {
+.collection-child #shop-now {
   background: #abd373;
   color: #fff;
   border: solid 1px #abd373;
@@ -597,53 +601,16 @@ img {
   font-size: 0.7rem;
 }
 
-.collection-child-1 {
-  background-image: url(../assets/b1.jpeg);
-  width: 67%;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.collection-child-2 {
-  background-image: url(../assets/b2.jpeg);
-  width: 33%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.collection-child-3 {
-  background-image: url(../assets/b3.jpeg);
-  width: 33%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
+.collection-child-1,
 .collection-child-4 {
-  background-image: url(../assets/b4.jpeg);
-  width: 67%;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  background-image: url(../assets/b1.jpeg);
+  width: calc(67% - 10px);
 }
-.collection-child-4 img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+
+.collection-child-2,
+.collection-child-3 {
+  background-image: url(../assets/b2.jpeg);
+  width: calc(33% - 10px);
 }
 
 .blog-head {
@@ -811,45 +778,42 @@ footer h4 {
 footer a {
   font-size: 0.7rem;
   text-decoration: none;
+  color: #000;
 }
 
 .social-media-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: left;
+      align-content: left;
 }
 .social-media-icons img {
   width: 15px;
   height: 15px;
   padding: 5px;
   border: 1px solid #000000;
+  margin: 5px;
+}
+
+.number {
+  display: inline-block;
+  white-space: nowrap;
 }
 
 .copyright {
-  padding: 50px;
+  padding: 50px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .copyright p {
   color: #abd373;
   font-size: 0.8rem;
-}
-.copyright p p:before {
-  content: "";
-  width: 100px;
-  height: 3px;
-  background: black;
-  left: -120px;
-  top: 50%;
-  position: absolute;
-}
-.copyright p p:after {
-  content: "";
-  width: 100px;
-  height: 3px;
-  background: black;
-  right: -120px;
-  top: 50%;
-  position: absolute;
 }

@@ -1,9 +1,67 @@
 $green: #abd373;
 $darkeygrey: #4c4c4c;
 $black: #000;
-$lightgrey: #88cce2;
+$lightgrey: #f6f7fb;
 $white: #fff;
-$faintblue: #f6f7fb;
+$faintblue: #88cce2;
+
+.hero-image {
+    background: #f8eee5;
+    padding: 35px 0px;
+
+    .wrapper {
+        display: flex;
+    }
+}
+
+.hero-text-container {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+
+    h1 {
+        margin: 0px;
+        font-size: 50px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+    #hero-text-emphasis {
+        display: block;
+        font-size: 105px;
+        font-weight: 400;
+    }
+
+    p {
+        margin: 0px;
+        font-size: 25px;
+    }
+}
+
+.hero-button {
+    width: 35%;
+    margin: 40px 0px;
+    padding: 20px 0px;
+    border: none;
+    border-radius: 100px;
+    background: $green;
+
+    a {
+        color: $white;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+}
+
+.header-image-container {
+    width: 50%;
+    height: auto;
+}
+
 
 .pay-info {
     background: $white;

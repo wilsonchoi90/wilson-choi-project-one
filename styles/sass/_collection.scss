@@ -20,7 +20,7 @@ $faintblue: #f6f7fb;
 
 .collection-child {
     background-repeat: no-repeat;
-    background-position: stretch;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     height: 300px;
@@ -37,7 +37,7 @@ $faintblue: #f6f7fb;
         margin: 0 auto;
     }
     
-    button {
+    #shop-now {
         background: $green;
         color: $white;
         border: solid 1px $green;
@@ -49,34 +49,14 @@ $faintblue: #f6f7fb;
     }
 }
 
-.collection-child-1 {
-    background-image: url(../assets/b1.jpeg);
-    width: calc(67%);
-    align-items: left;
-    justify-content: flex-start;
-}
-    
-.collection-child-2 {
-    background-image: url(../assets/b2.jpeg);
-    width: calc(33%);
-    align-items: center;
-    justify-content: center;
-}
-    
-.collection-child-3 {
-    background-image: url(../assets/b3.jpeg);
-    width: calc(33%);
-    align-items: center;
-    justify-content: center;
-}
-    
+.collection-child-1,
 .collection-child-4 {
-    background-image: url(../assets/b4.jpeg);
-    width: calc(67%);
-    align-items: left;
-    justify-content: flex-start;
-        img {
-            width: 100%;
-            object-fit: cover;
-        }
+    background-image: url(../assets/b1.jpeg);
+    width: calc(67% - 10px);
+}
+    
+.collection-child-2,
+.collection-child-3 {
+    background-image: url(../assets/b2.jpeg);
+    width: calc(33% - 10px);
 }

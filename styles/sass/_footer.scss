@@ -38,46 +38,35 @@ footer h4 {
 footer a {
     font-size: 0.7rem;
     text-decoration: none;
+    color: $black;
 }
 
 .social-media-icons {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-content: left;
         
     img {
         width: 15px;
         height: 15px;
         padding: 5px;
         border: 1px solid #000000;
+        margin: 5px;
     }
 }
 
+.number {
+        display: inline-block;
+        white-space: nowrap;
+}
+
 .copyright {
-    padding: 50px;
+    padding: 50px 0px 0px;
+    display: flex;
+    justify-content: center;
 
     p {
         color: $green;
         font-size: 0.8rem;
-    
-
-        p:before {
-            content: "";
-            width: 100px;
-            height: 3px;
-            background: black;
-            left: -120px;
-            top: 50%;
-            position: absolute;
-        }
-    
-        p:after {
-            content: "";
-            width: 100px;
-            height: 3px;
-            background: black;
-            right: -120px;
-            top: 50%;
-            position: absolute;
-        }
     }
 }
