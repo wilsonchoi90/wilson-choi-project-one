@@ -8,7 +8,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./styles/contact.css">
+        <link rel="stylesheet" href="./styles/contact-style.css">
     <title>Pronia Plants</title>
 </head>
 <body>
@@ -55,17 +55,21 @@
     <main>
         <!-- Contact Banner -->
         <section class="contact-banner">
-            <h2>Contact</h2>
+            <div class="wrapper">
+                <h1>Contact</h1>
+            </div>
         </section>
 
         <!-- Contact Form -->
         <section class="contact-form">
-            <div class="wrapper contact">
+            <div class="wrapper contact-parent">
                 <div class="contact-info">
                     <h2>Contact Info:</h2>
                     <p>Fill out the form and our team will get back to you within 24 hours.</p>
                     <p>(123)456-7890</p>
-                    <p></p>
+                    <p>123 Narnia Lane</p>
+                    <p>Toronto, Ontario</p>
+                    <p>A1A 1A1</p>
                 </div>
                 <div class="form-area">
                     <form action="">
@@ -87,7 +91,7 @@
 
                         <fieldset>
                             <label for="message" class="sr-only">Message</label>
-                            <input type="text" placeholder="Message" required="true" id="message">
+                            <input type="text" placeholder="Message" required="true" id="message" maxlength="500">
                         </fieldset>
 
                         <button>Post Comment</button>
