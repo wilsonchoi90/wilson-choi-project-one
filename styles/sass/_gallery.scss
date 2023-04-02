@@ -5,11 +5,11 @@ $lightgrey: #88cce2;
 $white: #fff;
 $faintblue: #f6f7fb;
 
-.products {
+.gallery{
     background: $white;
 }
 
-.products-head-text {
+.gallery-head-text {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -21,7 +21,7 @@ $faintblue: #f6f7fb;
     }
 }
 
-.products-head-text h2:before {
+.gallery-head-text h2:before {
     content: "";
     width: 100px;
     height: 3px;
@@ -31,7 +31,7 @@ $faintblue: #f6f7fb;
     position: absolute;
 }
 
-.products-head-text h2:after {
+.gallery-head-text h2:after {
     content: "";
     width: 100px;
     height: 3px;
