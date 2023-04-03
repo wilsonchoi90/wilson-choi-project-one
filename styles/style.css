@@ -454,7 +454,7 @@ img {
   background: #fff;
 }
 
-.gallery-head-text {
+.products-head-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -464,13 +464,13 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.gallery-head-text h2 {
+.products-head-text h2 {
   text-transform: uppercase;
   font-size: 2rem;
   position: relative;
 }
 
-.gallery-head-text h2:before {
+.products-head-text h2:before {
   content: "";
   width: 100px;
   height: 3px;
@@ -480,7 +480,7 @@ img {
   position: absolute;
 }
 
-.gallery-head-text h2:after {
+.products-head-text h2:after {
   content: "";
   width: 100px;
   height: 3px;
@@ -560,8 +560,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -580,6 +578,10 @@ img {
           flex-direction: column;
   height: 300px;
   line-height: 1.5;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px 20px;
 }
 .collection-child p {
   font-size: 0.7rem;
@@ -601,16 +603,51 @@ img {
   font-size: 0.7rem;
 }
 
-.collection-child-1,
-.collection-child-4 {
+.collection-child-1 {
   background-image: url(../assets/b1.jpeg);
   width: calc(67% - 10px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.collection-child-1 p {
+  margin: 0;
+}
+.collection-child-1 h3 {
+  margin: 0;
 }
 
-.collection-child-2,
-.collection-child-3 {
+.collection-child-2 {
   background-image: url(../assets/b2.jpeg);
   width: calc(33% - 10px);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.collection-child-3 {
+  background-image: url(../assets/b3.jpeg);
+  width: calc(33% - 10px);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.collection-child-4 {
+  background-image: url(../assets/b4.jpeg);
+  width: calc(67% - 10px);
+}
+.collection-child-4 p {
+  margin: 0;
+}
+.collection-child-4 h3 {
+  margin: 0;
 }
 
 .blog-head {

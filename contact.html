@@ -62,40 +62,53 @@
 
         <!-- Contact Form -->
         <section class="contact-form">
-            <div class="wrapper contact-parent">
-                <div class="contact-info">
-                    <h2>Contact Info:</h2>
-                    <p>Fill out the form and our team will get back to you within 24 hours.</p>
-                    <p>(123)456-7890</p>
-                    <p>123 Narnia Lane</p>
-                    <p>Toronto, Ontario</p>
-                    <p>A1A 1A1</p>
-                </div>
-                <div class="form-area">
-                    <form action="">
-                        <fieldset>
-                            <label for="first-name" class="sr-only">First Name</label>
-                            <input type="text" placeholder="First Name*" required="true" id="first-name">
-                            
-                            <label for="last-name" class="sr-only">Last Name</label>
-                            <input type="text" placeholder="Last Name*" required="true" id="last-name">
-                        </fieldset>
-
-                        <fieldset>
-                            <label for="phone" class="sr-only">Phone</label>
-                            <input type="tel" placeholder="Phone*" required="true" id="phone">
-                            
-                            <label for="email" class="sr-only">Email</label>
-                            <input type="email" placeholder="Email*" required="true" id="email">
-                        </fieldset>
-
-                        <fieldset>
-                            <label for="message" class="sr-only">Message</label>
-                            <input type="text" placeholder="Message" required="true" id="message" maxlength="500">
-                        </fieldset>
-
-                        <button>Post Comment</button>
-                    </form>
+            <div class="wrapper">
+                <div class="contact-parent">
+                    <div class="contact-info">
+                        <h2>Contact Info:</h2>
+                        <p>Fill out the form and our team will get back to you within 24 hours.</p>
+                        <p>(123)456-7890</p>
+                        <p>123 Narnia Lane</p>
+                        <p>Toronto, Ontario</p>
+                        <p>A1A 1A1</p>
+                    </div>
+                    <div class="form-area">
+                        <form action="">
+                            <fieldset class="first-row">
+                                <div class="first-name">
+                                    <label for="first-name" class="sr-only">First Name</label>
+                                    <input type="text" placeholder="First Name*" required="true" id="first-name">
+                                </div>
+                    
+                                <div class="last-name">
+                                    <label for="last-name" class="sr-only">Last Name</label>
+                                    <input type="text" placeholder="Last Name*" required="true" id="last-name">
+                                </div>
+                            </fieldset>
+                    
+                            <fieldset class="second-row">
+                                <div class="phone">
+                                    <label for="phone" class="sr-only">Phone</label>
+                                    <input type="tel" placeholder="Phone*" required="true" id="phone">
+                                </div>
+                    
+                                <div class="email">
+                                    <label for="email" class="sr-only">Email</label>
+                                    <input type="email" placeholder="Email*" required="true" id="email">
+                                </div>
+                            </fieldset>
+                    
+                            <fieldset>
+                                <label for="message" class="sr-only">Message</label>
+                                <textarea type="text" placeholder="Message" required id="message" maxlength="500" rows="5" cols="60">
+                                </textarea>
+                            </fieldset>
+                    
+                            <fieldset class="button">
+                                <button>Post Comment</button>
+                            </fieldset>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
