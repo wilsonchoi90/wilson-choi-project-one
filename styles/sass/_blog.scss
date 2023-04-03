@@ -1,9 +1,9 @@
 $green: #abd373;
 $darkeygrey: #4c4c4c;
 $black: #000;
-$lightgrey: #88cce2;
+$lightgrey: #f6f7fb;
 $white: #fff;
-$faintblue: #f6f7fb;
+$faintblue: #88cce2;
 
 .blog-head {
     background: $white;
@@ -97,4 +97,14 @@ h2:after {
 
 .blog-post-child img {
     padding-top: 30px;
+}
+
+@media (max-width: 800px) {
+    .blog-post-parent {
+        flex-direction: column;
+
+        .blog-post-child {
+            flex-direction: row;
+        }
+    }
 }

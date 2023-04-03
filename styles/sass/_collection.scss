@@ -1,9 +1,9 @@
 $green: #abd373;
 $darkeygrey: #4c4c4c;
 $black: #000;
-$lightgrey: #88cce2;
+$lightgrey: #f6f7fb;
 $white: #fff;
-$faintblue: #f6f7fb;
+$faintblue: #88cce2;
 
 
 .collection {
@@ -53,7 +53,7 @@ $faintblue: #f6f7fb;
 
 .collection-child-1 {
     background-image: url(../assets/b1.jpeg);
-    width: calc(67% - 10px);
+    width: calc(67% - 50px);
     justify-content: center;
 
     p {
@@ -67,21 +67,21 @@ $faintblue: #f6f7fb;
     
 .collection-child-2 {
     background-image: url(../assets/b2.jpeg);
-    width: calc(33% - 10px);
+    width: calc(33% - 50px);
     align-items: center;
     justify-content: center;
 }
 
 .collection-child-3 {
     background-image: url(../assets/b3.jpeg);
-    width: calc(33% - 10px);
+    width: calc(33% - 50px);
     align-items: center;
      justify-content: center;
 }
 
 .collection-child-4 {
     background-image: url(../assets/b4.jpeg);
-    width: calc(67% - 10px);
+    width: calc(67% - 50px);
 
 
     p {
@@ -93,3 +93,10 @@ $faintblue: #f6f7fb;
     }
 }    
 
+@media (max-width: 800px) {
+
+    .collection-parent {
+        flex-direction: column;
+        width: 100%;
+    }
+}

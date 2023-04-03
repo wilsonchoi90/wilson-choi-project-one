@@ -450,6 +450,15 @@ img {
   font-weight: 300;
 }
 
+@media (max-width: 800px) {
+  .hero-image .wrapper,
+  .pay-info .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .gallery {
   background: #fff;
 }
@@ -605,7 +614,7 @@ img {
 
 .collection-child-1 {
   background-image: url(../assets/b1.jpeg);
-  width: calc(67% - 10px);
+  width: calc(67% - 50px);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -619,7 +628,7 @@ img {
 
 .collection-child-2 {
   background-image: url(../assets/b2.jpeg);
-  width: calc(33% - 10px);
+  width: calc(33% - 50px);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -630,7 +639,7 @@ img {
 
 .collection-child-3 {
   background-image: url(../assets/b3.jpeg);
-  width: calc(33% - 10px);
+  width: calc(33% - 50px);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -641,7 +650,7 @@ img {
 
 .collection-child-4 {
   background-image: url(../assets/b4.jpeg);
-  width: calc(67% - 10px);
+  width: calc(67% - 50px);
 }
 .collection-child-4 p {
   margin: 0;
@@ -650,6 +659,15 @@ img {
   margin: 0;
 }
 
+@media (max-width: 800px) {
+  .collection-parent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+}
 .blog-head {
   background: #fff;
 }
@@ -778,6 +796,20 @@ h2:after {
   padding-top: 30px;
 }
 
+@media (max-width: 800px) {
+  .blog-post-parent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog-post-parent .blog-post-child {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
 footer {
   background-image: url(../assets/footer.jpg);
   background-repeat: no-repeat;

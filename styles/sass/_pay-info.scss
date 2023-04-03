@@ -110,3 +110,14 @@ $faintblue: #88cce2;
         font-weight: 300;
     }
 }
+
+
+
+
+@media (max-width: 800px) {
+
+    .hero-image .wrapper,
+    .pay-info .wrapper {
+        flex-direction: column;
+    }
+}
