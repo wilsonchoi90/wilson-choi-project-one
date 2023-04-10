@@ -425,11 +425,6 @@ input::placeholder {
   font-style: italic;
 }
 
-textarea {
-  color: #4c4c4c;
-  font-style: italic;
-}
-
 button {
   background: #abd373;
   color: #fff;
@@ -438,6 +433,12 @@ button {
   border: 1px solid #abd373;
   font-size: 0.7rem;
   text-transform: uppercase;
+}
+
+button:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 10px #4c4c4c;
+          box-shadow: 0 0 10px #4c4c4c;
 }
 
 .button {

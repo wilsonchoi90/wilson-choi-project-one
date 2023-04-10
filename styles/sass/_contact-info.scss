@@ -89,11 +89,6 @@ input::placeholder {
     font-style: italic;
 }
 
-textarea {
-    color: $darkeygrey;
-    font-style: italic;
-}
-
 button {
     background: $green;
     color: $white;
@@ -102,7 +97,13 @@ button {
     border: 1px solid $green;
     font-size: 0.7rem;
     text-transform: uppercase;
+
 }
+        button:hover {
+            cursor: pointer;
+            box-shadow: 0 0 10px $darkeygrey;
+        }
+
 
 .button {
     display: flex;
